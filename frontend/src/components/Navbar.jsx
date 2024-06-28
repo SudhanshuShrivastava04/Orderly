@@ -14,8 +14,8 @@ const Navbar = () => {
           onClick={() => setMenu("home")}
           className={
             menu == "home"
-              ? "pb-0.5 border-b-2 border-b-orange-400 text-orange-400 cursor-pointer"
-              : "cursor-pointer"
+              ? "pb-0.5 border-b-2 border-b-orange-500 text-orange-500 cursor-pointer"
+              : "cursor-pointer text-gray-400"
           }
         >
           Home
@@ -24,11 +24,21 @@ const Navbar = () => {
           onClick={() => setMenu("menu")}
           className={
             menu == "menu"
-              ? "pb-0.5 border-b-2 border-b-orange-400 text-orange-400 cursor-pointer"
-              : "cursor-pointer"
+              ? "pb-0.5 border-b-2 border-b-orange-500 text-orange-500 cursor-pointer"
+              : "cursor-pointer text-gray-400"
           }
         >
           Menu
+        </li>
+        <li
+          onClick={() => setMenu("contactUs")}
+          className={
+            menu == "contactUs"
+              ? "pb-0.5 border-b-2 border-b-orange-500 text-orange-500 cursor-pointer"
+              : "cursor-pointer text-gray-400"
+          }
+        >
+          Contact Us
         </li>
       </ul>
       <div className="w-1/4 flex items-center justify-end gap-10 text-outfit">
