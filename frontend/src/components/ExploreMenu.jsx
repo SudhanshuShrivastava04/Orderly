@@ -4,7 +4,7 @@ import { menu_list } from "../assets/assets";
 const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="flex flex-col gap-5 font-outfit" id="explore-menu">
-      <h1 className="text-4xl text-orange-500 font-medium">Explore Our Menu</h1>
+      <h1 className="text-4xl font-medium">Explore Our Menu</h1>
       <p className="max-w-[60%] text-gray-400">
         Tired of waiting for your culinary masterpieces to materialize while
         your stomach growls louder than a rock concert? With Orderly, you can
