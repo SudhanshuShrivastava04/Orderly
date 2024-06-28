@@ -5,7 +5,7 @@ const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="flex flex-col gap-5 font-outfit" id="explore-menu">
       <h1 className="text-4xl font-medium">Explore Our Menu</h1>
-      <p className="max-w-[60%] text-gray-400">
+      <p className="lg:max-w-[60%] w-full text-gray-400">
         Tired of waiting for your culinary masterpieces to materialize while
         your stomach growls louder than a rock concert? With Orderly, you can
         skip the drama of your kitchen disasters and dive straight into
@@ -13,7 +13,7 @@ const ExploreMenu = ({ category, setCategory }) => {
         food while you kick back and relax.
       </p>
 
-      <div className="w-full flex justify-between items-center gap-6 text-center my-4 mx-0 overflow-x-scroll">
+      <div className="w-full flex justify-between items-center gap-6 text-center my-4 mx-0 overflow-x-scroll category">
         {menu_list.map((item, index) => {
           return (
             <div

@@ -8,7 +8,7 @@ module.exports = {
         outfit: ["Outfit", "sans-serif"],
       },
       fontSize: {
-        'responsive': ['max(4vw, 22px)','4.5rem'],
+        'responsive': ['max(4vw, 22px)','4rem'],
       },
       backgroundImage: {
         header: "url('/header_img.png')",

@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto px-12">
+      <div className="max-w-7xl w-full mx-auto px-4">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
