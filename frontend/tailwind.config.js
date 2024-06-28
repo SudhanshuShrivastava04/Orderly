@@ -7,9 +7,15 @@ module.exports = {
         unbounded: ['"Unbounded"', "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
       },
-      width: {
-        "4/5": "80%",
+      fontSize: {
+        'responsive': ['max(4vw, 22px)','4.5rem'],
       },
+      backgroundImage: {
+        header: "url('/header_img.png')",
+      },
+      animation: {
+        "fadeIn" : "fadeIn 1s ease-in-out forwards",
+      }
     },
   },
   plugins: [],
