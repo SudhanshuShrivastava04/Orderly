@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="h-[34vw] my-7 mx-auto font-outfit bg-cover relative bg-no-repeat bg-center bg-header">
       <div className="w-full h-full backdrop-blur-sm rounded-[30px]" />
-      <div className="absolute flex flex-col items-start gap-[1.5vw] w-1/2 bottom-[10%] left-[6vw] text-white animate-fadeIn">
+      <div className="absolute flex flex-col items-start gap-[1.5vw] w-1/2 bottom-[10%] left-[2vw] text-white animate-fadeIn">
         <h2 className="text-responsive font-medium">
           Because Hunger Won't Wait for Your Slow Cooking'
         </h2>
