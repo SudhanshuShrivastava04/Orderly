@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       {showLogin ? <LoginModal setShowLogin={setShowLogin} /> : <></>}
-      <div className="max-w-7xl w-full mx-auto px-4">
+      <div className="max-w-7xl w-full mx-auto px-4 min-h-[100vh]">
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path="/" element={<Home />} />
