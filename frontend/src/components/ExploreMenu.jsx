@@ -5,12 +5,15 @@ const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="flex flex-col gap-5 font-outfit" id="explore-menu">
       <h1 className="text-4xl font-medium">Explore Our Menu</h1>
-      <p className="lg:max-w-[60%] w-full text-gray-400">
-        Tired of waiting for your culinary masterpieces to materialize while
-        your stomach growls louder than a rock concert? With Orderly, you can
-        skip the drama of your kitchen disasters and dive straight into
-        deliciousness. We know you're too hungry to wait, so let us handle the
-        food while you kick back and relax.
+      <p className="lg:max-w-[60%] lg:text-lg w-full text-gray-400">
+        Are you tired of kitchen mishaps and long waits for your favorite meals?
+        At Orderly, we eliminate the hassle of cooking and deliver mouthwatering
+        dishes straight to your door. Whether you're craving a quick snack or a
+        gourmet feast, our extensive menu has something for everyone. Skip the
+        stress and savor the flavor—Orderly makes it easy to enjoy delicious,
+        restaurant-quality meals from the comfort of your home. Relax and let us
+        handle the cooking so you can indulge in a culinary experience without
+        lifting a finger.
       </p>
 
       <div className="w-full flex justify-between items-center gap-6 text-center my-4 mx-0 overflow-x-scroll category">
