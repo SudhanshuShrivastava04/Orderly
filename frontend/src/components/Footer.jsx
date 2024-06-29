@@ -53,9 +53,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col items-start gap-4">
-          <h2 className="text-2xl lg:text-4xl font-medium flex items-end">
+          <h2 className="text-2xl lg:text-4xl font-medium flex items-end justify-center">
             Get In Touch
-            <GoArrowUpRight size={24} lg:size={40} />
+            <GoArrowUpRight className="text-2xl lg:text-4xl md:text-3xl" />
           </h2>
           <ul className="text-sm lg:text-base">
             <li>+(91) 817-145-4200</li>

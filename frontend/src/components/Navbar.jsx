@@ -3,7 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { SlBasket } from "react-icons/sl";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("home");
 
   return (
@@ -51,7 +51,7 @@ const Navbar = () => {
           <SlBasket size={18} />
           <div className="absolute min-w-2.5 min-h-2.5 bg-orange-500 rounded-md -top-2 -right-2"></div>
         </div>
-        <button className="bg-transparent lg:text-lg text-orange-500 border rounded-full border-orange-500 px-3 hover:bg-orange-400 hover:border-orange-400 hover:text-white duration-300 transition cursor-pointer">
+        <button onClick={() => setShowLogin(true)} className="bg-transparent lg:text-lg text-orange-500 border rounded-full border-orange-500 px-3 hover:bg-orange-500 hover:border-orange-500 hover:text-white duration-300 transition cursor-pointer">
           Sign in
         </button>
       </div>
