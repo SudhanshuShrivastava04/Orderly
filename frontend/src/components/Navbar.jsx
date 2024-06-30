@@ -55,7 +55,7 @@ const Navbar = ({ setShowLogin }) => {
 
           <div
             className={
-              getTotalCartAmount() == 0
+              getTotalCartAmount() === 0
                 ? ""
                 : "absolute min-w-2.5 min-h-2.5 bg-orange-500 rounded-md -top-2 -right-2"
             }

@@ -20,23 +20,23 @@ const LoginModal = ({ setShowLogin }) => {
               <input
                 type="text"
                 placeholder="Enter Username"
-                className="w-full p-2 border rounded-md"
+                className="w-full p-2 border rounded-md outline-orange-500"
               />
             </div>
           )}
           <div className="flex flex-col items-start w-full gap-2">
             <label>Email</label>
-            <input type="email" placeholder="email@example.com" className="w-full p-2 border rounded-md" required />
+            <input type="email" placeholder="email@example.com" className="w-full p-2 border rounded-md outline-orange-500" required />
           </div>
           <div className="flex flex-col items-start w-full gap-2">
             <label>Password</label>
-            <input type="password" placeholder="Enter Password" className="w-full p-2 border rounded-md" required />
+            <input type="password" placeholder="Enter Password" className="w-full p-2 border rounded-md outline-orange-500" required />
           </div>
         </div>
 
         <button className="border border-orange-500 rounded-full text-orange-500 text-md transition duration-300 ease-in-out hover:scale-105 hover:bg-orange-500 hover:text-white w-fit py-1.5 px-4">{currState === "Sign Up" ? "Create account" : "Login"}</button>
         <div className="w-full flex gap-2">
-          <input type="checkbox" required className="checked:bg-yellow-200" />
+          <input type="checkbox" required className="outline-orange-500" />
           <p className="text-gray-400">By continuing, I Agree to the terms of use and privacy policy.</p>
         </div>
         {currState === "Login" ? (

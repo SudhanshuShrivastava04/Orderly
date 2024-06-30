@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../context/StoreContext";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { food_list, cartItems, removeFromCart, getTotalCartAmount } =
     useContext(StoreContext);
 
+  const navigate = useNavigate();
   return (
     <div className="mt-12 font-outfit">
       <div className="w-full">
@@ -66,7 +68,11 @@ const Cart = () => {
               </b>
             </div>
           </div>
-          <button className="border-none text-white bg-orange-500 p-2 rounded-lg w-full md:w-fit uppercase text-md">
+          <button
+            onClick={() => navigate("/order")}
+            disabled={getTotalCartAmount() === 0}
+            className="border-none disabled:bg-gray-400 text-white bg-orange-500 p-2 rounded-lg w-full md:w-fit uppercase text-md"
+          >
             Proceed to checkout
           </button>
         </div>
